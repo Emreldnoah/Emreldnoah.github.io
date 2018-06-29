@@ -29,12 +29,14 @@
         $("iframe").show();
           });
     
-     $(".box").click(function(){
+      $(".box").click(function(){
           var our_box = $("#"+this.id);
-          var val = turn == 1 ? 'X' : 'O';
-          our_box.text(val);
-          turn = !turn;
-        });    
+          if(our_box.text() == ''){
+            var val = turn == 1 ? 'X' : 'O';
+            our_box.text(val);
+            turn = !turn;
+          }
+        });   
       });
     
   </script>
