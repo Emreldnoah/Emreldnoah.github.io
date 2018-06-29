@@ -35,6 +35,7 @@
             var val = turn == 1 ? 'X' : 'O';
             our_box.text(val);
             turn = !turn;
+            $("#turn").text((turn == 1 ? 'X' : 'O')+ "'s turn")
           }
         });   
       });
@@ -55,6 +56,8 @@
      <button type="button" id="button1">Hide Me!</button>
      <button type="button" id="button2">Reveal Me!</button>
      <button type="button" id="button3">MAKE IT STOP!</button>
+      
+      <h3 id ="turn"> Turb </h3>
       
       <div class="row">
         <button class="col-md-4 box" id="box1"> </button>
