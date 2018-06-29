@@ -9,6 +9,10 @@
   crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
+    var x = 'x';
+    var o = '0';
+    var turn = x;
+    
     $(document).ready(function(){
       $("#button1").click(function(){
       alert("Cant Find Me!");
@@ -24,13 +28,29 @@
       alert("Why Would You Ever Want It To Stop?");
         $("iframe").show();
           });
-    var x = 'x';
-    var o = '0';
-    var turn = x;
     
-    $(".box").click(function(){
-      var our_box = $("#"+ this.id);
-      our_box.text(turn);    
+    
+     $(".box").click(function(){
+          var our_box = $("#"+this.id);
+          var val;
+          if(turn = 1){
+            val = x;
+          } else {
+            val = o;
+          }
+          our_box.text(val);
+          turn = !turn;
+          
+        });
+        
+        
+      });    
+    
+      
+     
+        
+        
+        
       });
                     
     });
