@@ -37,7 +37,13 @@
             turn = !turn;
             $("#turn").text((turn == 1 ? 'X' : 'O') + "'s Turn");
           }
-          if (($("#box1").text() == $("#box2").text() ==  $("#box3").text()) && ($("#box1").text() != '')) {
+            if (($("#box1").text() == $("#box2").text() ==  $("#box3").text()) && ($("#box1").text() != '')) {
+            alert($("#box1").text() + " Wins")
+            
+            if (($("#box1").text() == $("#box3").text() ==  $("#box6").text()) && ($("#box1").text() != '')) {
+            alert($("#box1").text() + " Wins")
+              
+              if (($("#box1").text() == $("#box2").text() ==  $("#box3").text()) && ($("#box1").text() != '')) {
             alert($("#box1").text() + " Wins")
           }
              
